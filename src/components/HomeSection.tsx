@@ -1,0 +1,70 @@
+import React from "react";
+import { Github, Linkedin, Mail, Code } from "lucide-react";
+
+interface HomeSectionProps {
+  isTransitioning: boolean;
+  navigateToSection: (section: string) => void;
+}
+
+const HomeSection: React.FC<HomeSectionProps> = ({
+  isTransitioning,
+  navigateToSection,
+}) => {
+  return (
+    <section
+      className={`min-h-screen flex items-center justify-center px-4 transition-opacity duration-300 ${
+        isTransitioning ? "opacity-0" : "opacity-100"
+      }`}
+    >
+      <div className="text-center space-y-6">
+        <div className="inline-block p-4 bg-amber-500/20 rounded-full mb-4 animate-bounce-slow">
+          <Code size={48} className="text-amber-400" />
+        </div>
+        <h1 className="text-5xl md:text-7xl font-bold animate-slide-up">
+          Hi, I'm{" "}
+          <span className="bg-linear-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
+            Ong Jing Wei
+          </span>
+        </h1>
+        <p
+          className="text-xl md:text-2xl text-stone-300 max-w-2xl mx-auto animate-slide-up"
+          style={{ animationDelay: "100ms" }}
+        >
+          Graphics Programmer & Game Engine Developer
+        </p>
+        <div
+          className="flex justify-center space-x-4 pt-4 animate-slide-up"
+          style={{ animationDelay: "200ms" }}
+        >
+          <a
+            href="#"
+            className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
+          >
+            <Github size={24} />
+          </a>
+          <a
+            href="#"
+            className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
+          >
+            <Linkedin size={24} />
+          </a>
+          <a
+            href="#"
+            className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
+          >
+            <Mail size={24} />
+          </a>
+        </div>
+        <button
+          onClick={() => navigateToSection("projects")}
+          className="mt-8 px-8 py-3 bg-linear-to-r from-amber-600 to-orange-600 rounded-full font-semibold hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/50 animate-slide-up"
+          style={{ animationDelay: "300ms" }}
+        >
+          View My Work
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default HomeSection;

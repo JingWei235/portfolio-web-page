@@ -5,11 +5,15 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.logos {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+/* optional: constrain logo size if needed */
+.logos .logo {
+  height: 56px;
+  width: auto;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
