@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import HomeSection from "./components/HomeSection";
 import AboutSection from "./components/AboutSection";
