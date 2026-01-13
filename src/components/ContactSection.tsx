@@ -27,7 +27,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isTransitioning }) => {
         <div className="bg-stone-800/50 backdrop-blur-sm p-8 rounded-2xl border border-amber-500/20 animate-slide-up hover:border-amber-400 transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/20">
           <div className="space-y-6">
             <div
-              className="animate-slide-up"
+              className="opacity-0 animate-slide-up"
               style={{ animationDelay: "100ms" }}
             >
               <label className="block text-sm font-medium mb-2">Name</label>
@@ -42,7 +42,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isTransitioning }) => {
               />
             </div>
             <div
-              className="animate-slide-up"
+              className="opacity-0 animate-slide-up"
               style={{ animationDelay: "200ms" }}
             >
               <label className="block text-sm font-medium mb-2">Email</label>
@@ -57,12 +57,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isTransitioning }) => {
               />
             </div>
             <div
-              className="animate-slide-up"
+              className="opacity-0 animate-slide-up"
               style={{ animationDelay: "300ms" }}
             >
               <label className="block text-sm font-medium mb-2">Message</label>
               <textarea
-                rows={5}
+                rows={2} // Adjusted from 3 to 2 to leave space at the bottom
                 value={formData.message}
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
@@ -76,7 +76,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isTransitioning }) => {
                 e.preventDefault();
                 alert("Form submission would be handled here!");
               }}
-              className="w-full py-3 bg-gradient-to-r from-amber-600 to-orange-600 rounded-lg font-semibold hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/50 animate-slide-up"
+              className="opacity-0 w-full py-3 bg-linear-to-r from-amber-600 to-orange-600 rounded-lg font-semibold hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/50 animate-slide-up"
               style={{ animationDelay: "400ms" }}
             >
               Send Message
@@ -84,7 +84,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isTransitioning }) => {
           </div>
 
           <div
-            className="flex justify-center space-x-6 mt-8 pt-8 border-t border-amber-500/20 animate-slide-up"
+            className="opacity-0 flex justify-center space-x-6 mt-8 pt-8 border-t border-amber-500/20 animate-slide-up"
             style={{ animationDelay: "500ms" }}
           >
             <a

@@ -27,13 +27,13 @@ const HomeSection: React.FC<HomeSectionProps> = ({
           </span>
         </h1>
         <p
-          className="text-xl md:text-2xl text-stone-300 max-w-2xl mx-auto animate-slide-up"
+          className="text-xl md:text-2xl text-stone-300 max-w-2xl mx-auto animate-slide-up opacity-0"
           style={{ animationDelay: "100ms" }}
         >
           Graphics Programmer & Game Engine Developer
         </p>
         <div
-          className="flex justify-center space-x-4 pt-4 animate-slide-up"
+          className="flex justify-center space-x-4 pt-4 animate-slide-up opacity-0"
           style={{ animationDelay: "200ms" }}
         >
           <a
@@ -57,7 +57,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({
         </div>
         <button
           onClick={() => navigateToSection("projects")}
-          className="mt-8 px-8 py-3 bg-linear-to-r from-amber-600 to-orange-600 rounded-full font-semibold hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/50 animate-slide-up"
+          className="mt-8 px-8 py-3 bg-linear-to-r from-amber-600 to-orange-600 rounded-full font-semibold hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/50 animate-slide-up opacity-0"
           style={{ animationDelay: "300ms" }}
         >
           View My Work

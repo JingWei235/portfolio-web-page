@@ -42,7 +42,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           {skills.map((skillSet, idx) => (
             <div
               key={idx}
-              className="bg-stone-800/50 backdrop-blur-sm p-6 rounded-xl border border-amber-500/20 animate-slide-up hover:border-amber-400 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/20"
+              className=" opacity-0 bg-stone-800/50 backdrop-blur-sm p-6 rounded-xl border border-amber-500/20 animate-slide-up hover:border-amber-400 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/20"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               <h3 className="text-xl font-bold text-amber-400 mb-4">

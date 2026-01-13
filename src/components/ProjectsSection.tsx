@@ -33,7 +33,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-stone-800/50 backdrop-blur-sm p-6 rounded-xl border border-amber-500/20 hover:border-amber-400 transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl hover:shadow-amber-500/30 group animate-slide-up"
+              className="opacity-0 bg-stone-800/50 backdrop-blur-sm p-6 rounded-xl border border-amber-500/20 hover:border-amber-400 transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl hover:shadow-amber-500/30 group animate-slide-up"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               <h3 className="text-2xl font-bold mb-3 group-hover:text-amber-400 transition-colors duration-300">
