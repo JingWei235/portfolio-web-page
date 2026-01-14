@@ -44,7 +44,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-amber-500/20 rounded-full text-sm text-amber-300 hover:bg-amber-500/40 transition-all duration-300 hover:scale-110"
+                    className="px-3 py-1 bg-amber-500/20 rounded-full text-sm text-amber-300 hover:bg-amber-500/40 transition-all duration-300 hover:scale-110 cursor-default"
                   >
                     {tech}
                   </span>
