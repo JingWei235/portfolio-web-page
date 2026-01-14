@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { FiMenu, FiX } from "react-icons/fi";
 import HomeSection from "./components/HomeSection";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -47,6 +47,30 @@ const Portfolio = () => {
       tech: ["React", "API Integration", "Chart.js"],
       link: "#",
     },
+    {
+      title: "Weather Dashboard",
+      description: "Real-time weather data visualization with interactive maps",
+      tech: ["React", "API Integration", "Chart.js"],
+      link: "#",
+    },
+    {
+      title: "Weather Dashboard",
+      description: "Real-time weather data visualization with interactive maps",
+      tech: ["React", "API Integration", "Chart.js"],
+      link: "#",
+    },
+    {
+      title: "Weather Dashboard",
+      description: "Real-time weather data visualization with interactive maps",
+      tech: ["React", "API Integration", "Chart.js"],
+      link: "#",
+    },
+    {
+      title: "Weather Dashboard",
+      description: "Real-time weather data visualization with interactive maps",
+      tech: ["React", "API Integration", "Chart.js"],
+      link: "#",
+    },
   ];
 
   const skills = [
@@ -62,7 +86,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="fixed w-full min-h-screen bg-linear-to-br from-stone-900 via-amber-900 to-stone-900 text-stone-50">
+    <div className="w-screen min-h-screen bg-linear-to-br from-stone-900 via-amber-900 to-stone-900 text-stone-50">
       {/* Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
@@ -93,7 +117,7 @@ const Portfolio = () => {
           </div>
 
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X /> : <Menu />}
+            {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
 

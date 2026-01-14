@@ -28,8 +28,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           <FiBriefcase className="text-amber-400" size={32} />
           <h2 className="text-4xl font-bold">My Projects</h2>
         </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-auto">
           {projects.map((project, idx) => (
             <div
               key={idx}
