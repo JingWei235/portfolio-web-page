@@ -1,5 +1,5 @@
 import React from "react";
-import { Briefcase, ExternalLink } from "lucide-react";
+import { FiBriefcase, FiExternalLink } from "react-icons/fi";
 
 interface Project {
   title: string;
@@ -25,7 +25,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
     >
       <div className="max-w-6xl w-full">
         <div className="flex items-center space-x-3 mb-12 animate-slide-right">
-          <Briefcase className="text-amber-400" size={32} />
+          <FiBriefcase className="text-amber-400" size={32} />
           <h2 className="text-4xl font-bold">My Projects</h2>
         </div>
 
@@ -55,7 +55,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 className="inline-flex items-center space-x-2 text-amber-400 hover:text-amber-300 transition-all duration-300 hover:translate-x-2"
               >
                 <span>View Project</span>
-                <ExternalLink
+                <FiExternalLink
                   size={16}
                   className="group-hover:rotate-45 transition-transform duration-300"
                 />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, Code } from "lucide-react";
+import { FiGithub, FiLinkedin, FiMail, FiCode } from "react-icons/fi";
 
 interface HomeSectionProps {
   isTransitioning: boolean;
@@ -18,7 +18,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({
     >
       <div className="text-center space-y-6">
         <div className="inline-block p-4 bg-amber-500/20 rounded-full mb-4 animate-bounce-slow">
-          <Code size={48} className="text-amber-400" />
+          <FiCode size={48} className="text-amber-400" />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold animate-slide-up">
           Hi, I'm{" "}
@@ -37,22 +37,25 @@ const HomeSection: React.FC<HomeSectionProps> = ({
           style={{ animationDelay: "200ms" }}
         >
           <a
-            href="#"
+            href="https://github.com/JingWei235"
+            title="GitHub"
             className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
           >
-            <Github size={24} />
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <FiGithub size={24} />
+            </svg>
           </a>
           <a
             href="#"
             className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
           >
-            <Linkedin size={24} />
+            <FiLinkedin size={24} />
           </a>
           <a
             href="#"
             className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
           >
-            <Mail size={24} />
+            <FiMail size={24} />
           </a>
         </div>
         <button

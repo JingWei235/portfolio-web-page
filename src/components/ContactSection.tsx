@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Github, Linkedin, Mail } from "lucide-react";
+import { FiGithub, FiLinkedin, FiMail, FiSend } from "react-icons/fi";
 
 interface ContactSectionProps {
   isTransitioning: boolean;
@@ -20,7 +20,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isTransitioning }) => {
     >
       <div className="max-w-2xl w-full">
         <div className="flex items-center space-x-3 mb-12 animate-slide-right">
-          <Send className="text-amber-400" size={32} />
+          <FiSend className="text-amber-400" size={32} />
           <h2 className="text-4xl font-bold">Get In Touch</h2>
         </div>
 
@@ -91,19 +91,19 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isTransitioning }) => {
               href="#"
               className="text-stone-400 hover:text-amber-400 transition-all duration-300 hover:scale-125 hover:-rotate-12"
             >
-              <Github size={28} />
+              <FiGithub size={28} />
             </a>
             <a
               href="#"
               className="text-stone-400 hover:text-amber-400 transition-all duration-300 hover:scale-125 hover:-rotate-12"
             >
-              <Linkedin size={28} />
+              <FiLinkedin size={28} />
             </a>
             <a
               href="#"
               className="text-stone-400 hover:text-amber-400 transition-all duration-300 hover:scale-125 hover:-rotate-12"
             >
-              <Mail size={28} />
+              <FiMail size={28} />
             </a>
           </div>
         </div>

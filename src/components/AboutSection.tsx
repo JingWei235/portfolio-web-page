@@ -1,5 +1,5 @@
 import React from "react";
-import { User } from "lucide-react";
+import { FiUser } from "react-icons/fi";
 
 interface AboutSectionProps {
   isTransitioning: boolean;
@@ -21,7 +21,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
     >
       <div className="max-w-4xl space-y-8">
         <div className="flex items-center space-x-3 mb-6 animate-slide-right">
-          <User className="text-amber-400" size={32} />
+          <FiUser className="text-amber-400" size={32} />
           <h2 className="text-4xl font-bold">About Me</h2>
         </div>
 
