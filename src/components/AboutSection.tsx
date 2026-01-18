@@ -27,14 +27,18 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
         <div className="bg-stone-800/50 backdrop-blur-sm p-8 rounded-2xl border border-amber-500/20 animate-slide-up hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20">
           <p className="text-lg text-stone-300 leading-relaxed mb-6">
-            I'm a passionate full-stack developer with expertise in building
-            modern web applications. I love creating elegant solutions to
-            complex problems and am always eager to learn new technologies.
+            I’m a graphics programmer and game engine developer, passionate
+            about real-time rendering, performance-critical systems, and
+            building interactive 3D environments. I enjoy working close to the
+            metal, tackling tough technical challenges, and creating systems
+            that are both efficient and expressive.
           </p>
           <p className="text-lg text-stone-300 leading-relaxed">
-            With several years of experience in web development, I specialize in
-            React, Node.js, and cloud technologies. I'm driven by the challenge
-            of turning ideas into reality through clean, efficient code.
+            I’ve spent years working with C++ and graphics programming,
+            constantly learning and exploring new technologies along the way.
+            I’m driven by curiosity, problem-solving, and the satisfaction of
+            turning complex concepts into real-time experiences that work and
+            feel great.
           </p>
         </div>
 

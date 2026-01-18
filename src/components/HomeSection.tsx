@@ -46,13 +46,14 @@ const HomeSection: React.FC<HomeSectionProps> = ({
             </svg>
           </a>
           <a
-            href="#"
+            href="https://linkedin.com/in/jing-wei-ong"
             className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
           >
             <FiLinkedin size={24} />
           </a>
           <a
-            href="#"
+            href="mailto:27jingweiong27@email.com?subject=Portfolio%20Inquiry&body=Hi%2C%0A%0AI%20came%20across%20your%20portfolio..."
+            aria-label="Send email"
             className="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
           >
             <FiMail size={24} />

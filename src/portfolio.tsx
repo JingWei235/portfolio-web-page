@@ -29,60 +29,49 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Wizard's Portal - Project Lead",
+      description: "Simple top down shooter made in C",
+      tech: ["C", "OpenGL"],
+      link: "#",
+    },
+    {
+      title: "Blop 'n Bounce - Engine Programmer",
+      description: "2D physics-based platformer",
+      tech: ["C++", "OpenGL", "GLSL"],
+      link: "#",
+    },
+    {
+      title: "Kopi diner dash game - Graphics Programmer",
       description:
-        "Full-stack e-commerce solution with React, Node.js, and MongoDB",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+        "Time management game set in a kopitiam, cook food and serve customers!",
+      tech: ["C++", "OpenGL"],
       link: "#",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates",
-      tech: ["React", "Firebase", "Tailwind"],
-      link: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather data visualization with interactive maps",
-      tech: ["React", "API Integration", "Chart.js"],
-      link: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather data visualization with interactive maps",
-      tech: ["React", "API Integration", "Chart.js"],
-      link: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather data visualization with interactive maps",
-      tech: ["React", "API Integration", "Chart.js"],
-      link: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather data visualization with interactive maps",
-      tech: ["React", "API Integration", "Chart.js"],
-      link: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather data visualization with interactive maps",
-      tech: ["React", "API Integration", "Chart.js"],
+      title: "BSP Project",
+      description: "BSP tree implementation and rendering in OpenGL",
+      tech: ["C++", "OpenGL"],
       link: "#",
     },
   ];
-
   const skills = [
     {
-      category: "Frontend",
-      items: ["React", "JavaScript", "HTML/CSS", "Tailwind"],
+      category: "Graphics & Engine Development",
+      items: [
+        "C++",
+        "Real-Time Rendering",
+        "Engine Architecture",
+        "Performance Optimization",
+      ],
     },
     {
-      category: "Backend",
-      items: ["Node.js", "Python", "MongoDB", "PostgreSQL"],
+      category: "Systems Programming",
+      items: ["C++", "STL", "Multithreading", "Memory Management"],
     },
-    { category: "Tools", items: ["Git", "Docker", "AWS", "CI/CD"] },
+    {
+      category: "Web & Tooling",
+      items: ["TypeScript", "React", "HTML/CSS", "Web-Based Visualization"],
+    },
   ];
 
   return (
@@ -101,7 +90,7 @@ const Portfolio = () => {
           </div>
 
           <div className="hidden md:flex space-x-8">
-            {["home", "about", "projects", "contact"].map((section) => (
+            {["home", "about", "projects"].map((section) => (
               <button
                 key={section}
                 onClick={() => navigateToSection(section)}
@@ -115,6 +104,21 @@ const Portfolio = () => {
               </button>
             ))}
           </div>
+          {/* <div className="hidden md:flex space-x-8">
+            {["home", "about", "projects", "contact"].map((section) => (
+              <button
+                key={section}
+                onClick={() => navigateToSection(section)}
+                className={`capitalize transition-all duration-300 bg-transparent ${
+                  activeSection === section
+                    ? "text-amber-400 scale-110"
+                    : "text-stone-400 hover:text-amber-300"
+                }`}
+              >
+                {section}
+              </button>
+            ))}
+          </div> */}
 
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FiX /> : <FiMenu />}
@@ -155,6 +159,7 @@ const Portfolio = () => {
           projects={projects}
         />
       )}
+
       {activeSection === "contact" && (
         <ContactSection isTransitioning={isTransitioning} />
       )}
