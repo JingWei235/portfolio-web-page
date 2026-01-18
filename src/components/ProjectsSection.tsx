@@ -26,7 +26,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       <div className="max-w-6xl w-full">
         <div className="flex items-center space-x-3 mb-12 animate-slide-right">
           <FiBriefcase className="text-amber-400" size={32} />
-          <h2 className="text-4xl font-bold">My Projects</h2>
+          <h2 className="text-4xl font-bold">My Projects</h2>{" "}
+          <div className="text-xs">(screenshots coming soon)</div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-auto p-4">
           {projects.map((project, idx) => (
